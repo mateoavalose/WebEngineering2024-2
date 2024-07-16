@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    align-self: center;
+}
+h1{
+    background-color: magenta;
+    margin: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+.Menu{
+    background-color: aqua;
+    width: 70%;
+    margin: 0 auto;
+}
+.Menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#avoid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
+    width: 70%;
+}
+#avoid aside{
+    border: 1px solid black;
+    height: 50hv;
+    margin: 10px;
+}
+#avoid aside button{
+    background-color: green;
+    border-radius: 100px;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    transition: 1s;
+    width: 80%;
+}
+#avoid aside button:hover{
+    background-color: darkgreen;
+}
+#avoid section{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#avoid section article{
+    background:lightblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 20vh;
+    margin: 10px;
+}
+footer{
+    border: blueviolet 1px solid;
+    margin: 0 auto;
+    margin-top: 2%;
+    width:70%;
+    text-align: center;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+#avoid aside img{
+    animation: beat 4s infinite;
+    border-radius: 50%;
+}
+
+@keyframes beat{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        background-color:green;
+    }
+}
+@media (max-width: 576px){
+    h1{
+        background-color:red;
+    }
+}
