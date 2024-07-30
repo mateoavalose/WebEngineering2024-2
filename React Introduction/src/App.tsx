@@ -4,6 +4,8 @@ import MyComponent from './components/MyComponent';
 import {Movie} from './models/movies';
 import { moviesData } from './database/moviedata';
 import { MovieComponent } from './components/MovieComponent';
+import { Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   /* 
@@ -74,6 +76,7 @@ function App() {
       <input type="number" placeholder="Year" 
         onChange={handleMovieChange} value={year} id="year" name="year"/>
       <button onClick={() => addMovie(movie)}>Add</button>
+      <button className="btn btn-success"> Click Me</button>
     </>
   )
 }
