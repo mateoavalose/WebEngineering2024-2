@@ -3,7 +3,7 @@ import { HPCharacter } from '../models/HPCharacter.models';
 import { Character } from './Character';
 
 export const ShowCharacter = () => {
-    const [charac, setCharac] = useState<HPCharacter>([])
+    const [charac, setCharac] = useState<HPCharacter>({} as HPCharacter);
     const getCharac = async () => {
         const response = await fetch('https://hp-api.onrender.com/api/characters');
         const data = await response.json();

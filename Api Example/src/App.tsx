@@ -7,13 +7,13 @@ function App() {
   return (
     <>
       <h1>Breaking Bad API</h1>
-      <ShowQuote />
+      <ShowQuote/>
 
       <div style={{ height: '100px' }} /> {/* Blank space */}
       <hr /> {/* Horizontal line */}
       <div style={{ height: '100px' }} /> {/* Blank space */}
       
-      <ShowCharacter />
+      <ShowCharacter/>
     </>
   )
 }
