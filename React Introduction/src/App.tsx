@@ -63,11 +63,14 @@ function App() {
       <button onClick={() => addFood(meal)}>Add</button>
       
       <h1>Movies</h1>
-      <ul>
-        {movies.map((movie) => (
-          <MovieComponent key={movie.id} movie={movie}/>
-        ))}
-      </ul>
+      <div className="container">
+        <div className="row">
+          {movies.map((movie) => (
+            <MovieComponent key={movie.id} movie={movie}/>
+          ))}
+        </div>
+      </div>
+        
       <h3>Add a Movie</h3>
       <input type="text" placeholder="Title" 
         onChange={handleMovieChange} value={title} id="title" name="title"/>
