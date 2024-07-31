@@ -1,4 +1,4 @@
-import { HPCharacter } from '../models/HPCharacter.models';
+import { HPCharacter } from '../../models/HPCharacter.models';
 
 interface CharacterProps {
     charac: HPCharacter;

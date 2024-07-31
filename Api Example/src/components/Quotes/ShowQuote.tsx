@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { SentenceBD } from '../models/sentence.models';
+import { SentenceBD } from '../../models/sentence.models';
 import { Sentence } from './Sentence';
 
 export const ShowQuote = () => {

@@ -1,4 +1,4 @@
-import { SentenceBD } from '../models/sentence.models';
+import { SentenceBD } from '../../models/sentence.models';
 
 interface SentenceProps {
     quote: SentenceBD;

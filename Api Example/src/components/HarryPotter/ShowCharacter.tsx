@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { HPCharacter } from '../models/HPCharacter.models';
+import { HPCharacter } from '../../models/HPCharacter.models';
 import { Character } from './Character';
 
 export const ShowCharacter = () => {
