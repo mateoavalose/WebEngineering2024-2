@@ -243,6 +243,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 1100px;
 }
 .banner .tagline {
   font-weight: 700;
@@ -297,7 +298,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 1000px;
   overflow: hidden;
 }
 .add-info h1 {
