@@ -297,7 +297,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1000px;
+  min-height: 100%;
   overflow: hidden;
 }
 .projskills h1 {
@@ -535,6 +535,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   text-align: center;
 }
+.add-info h3 {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
 .add-info p {
   color: #B8B8B8;
   font-size: 18px;
@@ -542,7 +547,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 80%;
 }
 .add-info .nav.nav-pills {
   width: 72%;
