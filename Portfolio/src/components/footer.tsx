@@ -11,6 +11,7 @@ export const Footer = () => {
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <p>&copy; 2024 Mateo Avalos</p>
+                        <p>Based on the design by Judy Gab (<span style={{color: "cyan"}}>judygab</span>)</p>
                     </Col>
                 </Row>
             </Container>
