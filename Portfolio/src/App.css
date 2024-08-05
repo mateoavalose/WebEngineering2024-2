@@ -85,7 +85,7 @@ p.danger {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Navbar Css */
+/* Navbar CSS */
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -235,7 +235,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Banner Css */
+/* Banner CSS */
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
@@ -289,7 +289,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Projects and Skills Css */
+/* Projects and Skills CSS */
 .projskills {
   padding: 80px 0;
   position: relative;
@@ -359,7 +359,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 100% !important;
 }
 /*--------------------------------------------------------------------------------*/
-/* Projects Css */
+/* Projects CSS */
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
@@ -402,7 +402,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Skills Css */
+/* Skills CSS */
 .skill {
   padding: 0 0 50px 0;
   position: relative;
@@ -515,7 +515,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Additional Information Css */
+/* Additional Information CSS */
 .add-info {
   padding: 80px 0;
   background: linear-gradient(0deg,  #d8267f -5.91%, #000 111.58%);
@@ -590,7 +590,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Work Experience Css */
+/* Work Experience CSS */
 
 
 /*--------------------------------------------------------------------------------*/
