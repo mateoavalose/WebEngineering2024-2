@@ -10,7 +10,7 @@ export const Footer = () => {
                         <img src={logo} alt="logo" />
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
-                        <p>&copy; 2021 Mateo Avalos</p>
+                        <p>&copy; 2024 Mateo Avalos</p>
                     </Col>
                 </Row>
             </Container>
