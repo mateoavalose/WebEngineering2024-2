@@ -52,10 +52,8 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
-            <h1>{`Hello ∪.∪ I'm Mateo, and I'm`} <span className="txt-rotate"><span className="wrap">{text}</span></span></h1>
-                <p>I'm an undergraduate at EIA University, passionate about leveraging technology for healthcare advancements. 
-                    I have robust communication and problem-solving skills, with experience with programming general purpose 
-                    applications and microcontrollers. My most proficient programming languages are Java and Python (always learning!)..</p>
+            <h1>{} <span className="txt-rotate"><span className="wrap">Hello ∪.∪ I'm <span style={{color: "yellow"}}>Mateo</span>, and I'm {text}</span></span></h1>
+                <p>Scroll down or use the top bar to learn more</p>
           </Col>
           <Col xs={12} md={6} xl={3}>
                 <div className={"animate__animated animate__zoomIn"}>

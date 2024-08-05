@@ -243,7 +243,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1100px;
+  min-height: 800px;
 }
 .banner .tagline {
   font-weight: 700;
@@ -258,7 +258,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner h1 {
   font-size: 65px;
   font-weight: 700;
-  height: 4em;
   letter-spacing: 0.8px;
   line-height: 1;
   margin-bottom: 20px;
@@ -524,7 +523,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1000px;
   overflow: hidden;
 }
 .add-info h1 {
