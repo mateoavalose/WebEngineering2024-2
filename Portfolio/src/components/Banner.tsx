@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import bannerImg from "../assets/img/banner-img.svg";
 import 'animate.css';
 
 export const Banner = () => {
@@ -57,7 +57,7 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={6} xl={3}>
                 <div className={"animate__animated animate__zoomIn"}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={bannerImg} alt="Header Img"/>
                 </div>
           </Col>
         </Row>
