@@ -9,8 +9,8 @@ export const ProjectsSkills = () => {
                 
                 <Row>
                     <Col size={12}>
-                        <h2>Additional Information</h2>
-                        <p>Here you'll find more information about me. Feel free to look around（￣︶￣）</p>
+                        <h2>Projects and Skills</h2>
+                        <p>Here you'll find more information about projects I've worked on and some of my personal skills. Feel free to look around（￣︶￣）</p>
                         <Tab.Container id="projskills-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>

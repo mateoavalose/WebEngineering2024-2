@@ -35,7 +35,7 @@ export const Skills = () => {
           </div>
           <div className="item">
             <img src={meter80} alt="Image" />
-            <h5>Java Programming</h5>
+            <h5>Java</h5>
           </div>
           <div className="item">
             <img src={meter90} alt="Image" />
@@ -44,6 +44,10 @@ export const Skills = () => {
           <div className="item">
             <img src={meter95} alt="Image" />
             <h5>Microcontroller Programming</h5>
+          </div>
+          <div className="item">
+            <img src={meter90} alt="Image" />
+            <h5>Python</h5>
           </div>
         </Carousel>
       </div>
