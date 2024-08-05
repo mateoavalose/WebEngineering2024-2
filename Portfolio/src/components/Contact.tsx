@@ -17,7 +17,7 @@ export const Contact = () => {
         success: boolean;
         message: string;
     }
-    
+
     const [status, setStatus] = useState<Status>({ success: false, message: "" });
 
     interface FormDetails {
@@ -48,19 +48,19 @@ export const Contact = () => {
         setButtonText('Send');
         let result = await response.json();
         setFormDetails(formInitialDetails);
-        if(result.code === 200) {
+        if (result.code === 200) {
             setStatus({ success: true, message: "message sent successfully" });
         } else {
             setStatus({ success: false, message: "message failed to send" });
         }
     };
 
-    return(
+    return (
         <section className="contact" id="connect">
             <Container>
                 <Row className="align-items-center">
                     <Col md={6}>
-                    <img src={contactImg} alt="Contact Me"></img>
+                        <img src={contactImg} alt="Contact Me"></img>
                     </Col>
                     <Col md={6}>
                         <h2>Get in touch</h2>
@@ -70,7 +70,7 @@ export const Contact = () => {
                                     <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
+                                    <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
                                 </Col>
                                 <Col sm={6} className="px-1">
                                     <input type="email" value={formDetails.lastName} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
@@ -86,7 +86,7 @@ export const Contact = () => {
                             {
                                 status.message &&
                                 <Col>
-                                <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                                    <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                                 </Col>
                             }
                         </form>
