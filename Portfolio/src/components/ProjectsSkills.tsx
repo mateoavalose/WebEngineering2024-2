@@ -2,16 +2,16 @@ import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import { Projects } from './Projects';
 import { Skills } from './Skills';
 
-export const AddInfo = () => {
+export const ProjectsSkills = () => {
     return(
-        <section className="add-info" id="add-info">
+        <section className="projskills" id="projskills">
             <Container>
                 
                 <Row>
                     <Col size={12}>
                         <h2>Additional Information</h2>
                         <p>Here you'll find more information about me. Feel free to look around（￣︶￣）</p>
-                        <Tab.Container id="add-info-tabs" defaultActiveKey="first">
+                        <Tab.Container id="projskills-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Projects</Nav.Link>
