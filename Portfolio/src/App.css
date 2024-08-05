@@ -590,6 +590,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
+/* Work Experience Css */
+
+
+/*--------------------------------------------------------------------------------*/
+/* Hobbies CSS */
+.hobbies {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.hobbies-bx {
+  background: linear-gradient(90.21deg, #e62dd6 -5.91%, #cc2323 111.58%);
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+}
+.hobbies h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.hobbies p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+}
+.hobbies-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.hobbies-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+
+/*--------------------------------------------------------------------------------*/
 /* Footer CSS */
 .footer {
   padding: 0 0 50px 0;
