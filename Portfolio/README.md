@@ -24,5 +24,9 @@ npm run dev
 
 Now, open the link provided by the run command in your browser. You should be seeing the Portfolio running locally. 
 
+## Live server
+
+The portfolio is currently live [here](portfoliomae.netlify.app)
+
 ### Acknowledgements
 This project is based on the design by [Judy Gab](https://github.com/judygab/web-dev-projects/tree/main/personal-portfolio).
