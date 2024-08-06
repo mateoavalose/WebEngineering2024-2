@@ -22,5 +22,7 @@ npm install
 npm run dev
 ```
 
+Now, open the link provided by the run command in your browser. You should be seeing the Portfolio running locally. 
+
 ### Acknowledgements
 This project is based on the design by [Judy Gab](https://github.com/judygab/web-dev-projects/tree/main/personal-portfolio).
