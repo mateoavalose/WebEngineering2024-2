@@ -358,6 +358,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .projskills .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
+
 /*--------------------------------------------------------------------------------*/
 /* Projects CSS */
 .proj-imgbx {
@@ -591,7 +592,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*--------------------------------------------------------------------------------*/
 /* Work Experience CSS */
-
+.work-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.work-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.work-imgbx:hover::before {
+  height: 100%;
+}
+.work-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.work-imgbx:hover .work-txtx {
+  top: 50%;
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------------------------*/
 /* Hobbies CSS */
