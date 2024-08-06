@@ -73,10 +73,10 @@ export const Contact = () => {
                                     <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)} />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="email" value={formDetails.lastName} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                                    <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="phone" value={formDetails.lastName} placeholder="Phone Number" onChange={(e) => onFormUpdate('phone', e.target.value)} />
+                                    <input type="phone" value={formDetails.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate('phone', e.target.value)} />
                                 </Col>
                                 <Col>
                                     <textarea rows={6} value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} />
