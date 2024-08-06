@@ -26,7 +26,7 @@ Now, open the link provided by the run command in your browser. You should be se
 
 ## Live server
 
-The portfolio is currently live [here](portfoliomae.netlify.app)
+The portfolio is currently live [here](https://portfoliomae.netlify.app)
 
 ### Acknowledgements
 This project is based on the design by [Judy Gab](https://github.com/judygab/web-dev-projects/tree/main/personal-portfolio).
