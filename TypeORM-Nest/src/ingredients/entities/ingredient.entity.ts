@@ -10,5 +10,5 @@ export class Ingredient {
             unique: true
         }
     )
-    nombre: string;
+    name: string;
 }
