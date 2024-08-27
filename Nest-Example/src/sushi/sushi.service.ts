@@ -34,6 +34,10 @@ export class SushiService {
   }
 
   remove(id: number) {
-    return `This action removes a #${id} sushi`;
+    this.sushies = this.sushies.filter(sushi => sushi.id !== id);
+    return {
+      message: `Sushi with id ${id} has been removed`,
+      status: 203
+    };
   }
 }
