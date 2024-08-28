@@ -15,8 +15,7 @@ import { ImagesModule } from './images/images.module';
       database: process.env.DB_NAME,
       username: process.env.DB_USER,
       password: process.env.DB_PASS,
-      autoLoadEntities: true,
-      synchronize: true
+      synchronize: true,
     }), IngredientsModule, ImagesModule
   ],
   controllers: [AppController],
