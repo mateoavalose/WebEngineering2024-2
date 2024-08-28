@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm'; // TypeORM config
 import { ConfigModule } from '@nestjs/config'; // Access to .env file
 import { IngredientsModule } from './ingredients/ingredients.module';
+import { ImagesModule } from './images/images.module';
 
 @Module({
   imports: [
@@ -16,7 +17,7 @@ import { IngredientsModule } from './ingredients/ingredients.module';
       password: process.env.DB_PASS,
       autoLoadEntities: true,
       synchronize: true
-    }), IngredientsModule
+    }), IngredientsModule, ImagesModule
   ],
   controllers: [AppController],
   providers: [AppService],
