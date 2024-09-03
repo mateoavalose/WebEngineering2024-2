@@ -5,6 +5,10 @@ import { TypeOrmModule } from '@nestjs/typeorm'; // TypeORM config
 import { ConfigModule } from '@nestjs/config'; // Access to .env file
 import { IngredientsModule } from './ingredients/ingredients.module';
 import { ImagesModule } from './images/images.module';
+import { PizzasModule } from './pizzas/pizzas.module';
+import { Pizza } from './pizzas/entities/pizza.entity';
+import { Ingredient } from './ingredients/entities/ingredient.entity';
+import { Image } from './images/entities/image.entity';
 
 @Module({
   imports: [
@@ -16,7 +20,9 @@ import { ImagesModule } from './images/images.module';
       username: process.env.DB_USER,
       password: process.env.DB_PASS,
       synchronize: true,
-    }), IngredientsModule, ImagesModule
+      autoLoadEntities: true,
+      entities: [Ingredient, Image, Pizza],
+    }), IngredientsModule, ImagesModule, PizzasModule
   ],
   controllers: [AppController],
   providers: [AppService],

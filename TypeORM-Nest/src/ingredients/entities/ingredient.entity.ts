@@ -1,5 +1,6 @@
 import { Image } from 'src/images/entities/image.entity';
-import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { Pizza } from 'src/pizzas/entities/pizza.entity';
+import { Column, Entity, JoinTable, ManyToMany, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Ingredient {
@@ -15,8 +16,12 @@ export class Ingredient {
 
     @OneToMany(
         () => Image,
-        (image) => image.ingredient,
-        { cascade: true, eager: true }
+        (image) => image.ingredient
     )
     images?: Image[];
+
+    @ManyToMany(() => Pizza,
+        (pizza) => pizza.ingredients)
+    @JoinTable()
+    pizzas: Pizza[];
 }

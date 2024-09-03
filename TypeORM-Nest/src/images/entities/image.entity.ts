@@ -14,7 +14,8 @@ export class Image {
 
     @ManyToOne(
         () => Ingredient,
-        (ingredient) => ingredient.images
+        ingredient => ingredient.images,
+        { cascade: true, eager: true}
     )
-    ingredient: Ingredient;
+    ingredient?: Ingredient;
 }
