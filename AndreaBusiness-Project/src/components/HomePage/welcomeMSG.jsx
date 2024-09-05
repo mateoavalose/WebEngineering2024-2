@@ -3,8 +3,8 @@ import React from 'react';
 const WelcomeMsg = () => {
     return (
         <div>
-            <h1>Welcome to My World</h1>
-            <h2>By Andrea Mesa - La Care Cortada</h2>
+            <h1>Welcome Everyone!</h1>
+            <h2>You're greeted by yours truly, Andrea Mesa - La Care Cortada</h2>
             <h3>You've just stepped into the realm where beauty, power, and ambition collide. I'm Andrea Mesa, but most know me as La Care Cortada.
                 Here, we don't play by the rules — we set them. My empire isn't just about flawless faces and fashion shows; 
                 it's built on bold moves, unstoppable drive, and a little bit of chaos behind the scenes.</h3>
