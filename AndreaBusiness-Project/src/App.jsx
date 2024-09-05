@@ -1,10 +1,11 @@
 import './App.css'
-import HomePage from './components/HomePage/homePage'
+import { RouterR } from './components/Menu/RouterR'
 
 function App() {
   return (
     <>
-      <HomePage />
+      <div style={{ height: '100px' }} /> {/* Blank space */} <hr /> {/* Horizontal line */} <div style={{ height: '100px' }} /> {/* Blank space */}
+      <RouterR/>
     </>
   )
 }
