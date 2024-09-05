@@ -1,22 +1,29 @@
+import { useState, useEffect } from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logo.svg';
 
 export const NavBar = () => {
     return (
         <>
-            <nav className="bg-gray-50 dark:bg-gray-700">
-                <div className="max-w-screen-xl px-4 py-3 mx-auto">
-                    <div className="flex items-center">
-                        <ul className="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-                            <li>
-                                <Link to="/home" className="text-gray-900 dark:text-white hover:underline">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="*" className="text-gray-900 dark:text-white hover:underline">404</Link>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Navbar expand="lg" bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand href="/">
+                        <img src={logo} alt="Logo" />
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" >
+                        <span className="navbar-toggler-icon"></span>
+                    </Navbar.Toggle>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                        </Nav>
+                        <Nav className="justify-content-end">
+                            <Nav.Link as={Link} to="*">404</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </>
     )
 }
