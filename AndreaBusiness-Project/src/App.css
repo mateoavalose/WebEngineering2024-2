@@ -265,6 +265,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 1;
 }
 
+
+/*--------------------------------------------------------------------------------*/
+/* Error CSS */
+.error {
+  padding: 80px 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
 /*--------------------------------------------------------------------------------*/
 /* Contact CSS*/
 .contact {
