@@ -177,6 +177,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
+/* Welcome Message */
+.welcomeMSG {
+  background-color: #290202;
+  padding: 80px 0;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.welcomeMSG h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+}
+.welcomeMSG h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+.welcomeMSG h3 {
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+.welcomeMSG h4 {
+  padding: 40px 0;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*--------------------------------------------------------------------------------*/
 /* Model Showcase */
 .modelShowcase {
   background-color: #AA367C;

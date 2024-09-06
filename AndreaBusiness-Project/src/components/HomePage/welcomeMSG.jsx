@@ -2,7 +2,7 @@ import React from 'react';
 
 const WelcomeMsg = () => {
     return (
-        <div>
+        <div className="welcomeMSG">
             <h1>Welcome Everyone!</h1>
             <h2>You're greeted by yours truly, Andrea Mesa - La Care Cortada</h2>
             <h3>You've just stepped into the realm where beauty, power, and ambition collide. I'm Andrea Mesa, but most know me as La Care Cortada.
