@@ -43,7 +43,7 @@ export const Model = () => {
 
   return (
     <section className="model" id="model">
-      <Row>
+      <div className="model-grid">
         {
           models.map((model, index) => {
             return (
@@ -51,7 +51,7 @@ export const Model = () => {
             )
           })
         }
-      </Row>
+      </div>
     </section>
   )
 }
