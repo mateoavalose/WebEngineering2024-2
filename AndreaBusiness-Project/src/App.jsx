@@ -5,6 +5,7 @@ import { RouteError } from './components/Menu/RouteError';
 
 // Components
 import Home from './components/HomePage/homePage';
+import { ModelShowcase } from './components/ModelsManagement/ModelShowcase';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/models" element={<ModelShowcase />} />
           <Route path="*" element={<RouteError />} />
         </Routes>
       </Router>

@@ -56,7 +56,7 @@ a:hover {
 }
 
 img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -167,82 +167,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Banner CSS */
-.banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 800px;
-}
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(219, 49, 151, 0.5) -5.91%, rgba(19, 4, 87, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin-bottom: 16px;
-  display: inline-block;
-}
-.banner h1 {
-  font-size: 65px;
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  line-height: 1;
-  margin-bottom: 20px;
-  display: block;
-}
-.banner p {
-  color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  width: 96%;
-}
-.banner img {
-  animation: updown 8s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-}
-
-/*--------------------------------------------------------------------------------*/
-/* Projects and Skills CSS */
-.projskills {
+/* Model Showcase */
+.modelShowcase {
   padding: 80px 0;
   position: relative;
-  background-image: url('./assets/img/footer-bg.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100%;
   overflow: hidden;
 }
-.projskills h1 {
+.modelShowcase h1 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
-.projskills h2 {
+.modelShowcase h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
-.projskills p {
+.modelShowcase p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -251,18 +196,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-.projskills .nav.nav-pills {
-  width: 72%;
-  margin: 0 auto;
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
-  overflow: hidden;
-  z-index: 1;
-}
-.projskills .nav.nav-pills .nav-item {
+
+.modelShowcase .nav-item {
   width: 50%;
 }
-.projskills .nav.nav-pills .nav-link {
+
+.modelShowcase .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
@@ -276,7 +215,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-.projskills .nav.nav-pills .nav-link::before {
+.modelShowcase .nav-link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -287,19 +226,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
-.projskills .nav.nav-pills .nav-link.active::before {
+.modelShowcase .nav-link.active::before {
     width: 100% !important;
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Projects CSS */
-.proj-imgbx {
+/* Model CSS */
+.model-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
-.proj-imgbx::before {
+.model-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
@@ -308,10 +247,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 0;
   transition: 0.4s ease-in-out;
 }
-.proj-imgbx:hover::before {
+.model-imgbx:hover::before {
   height: 100%;
 }
-.proj-txtx {
+.model-txtx {
   position: absolute;
   text-align: center;
   top: 65%;
@@ -321,57 +260,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-.proj-imgbx:hover .proj-txtx {
+.model-imgbx:hover .model-txtx {
   top: 50%;
   opacity: 1;
-}
-.background-image-right {
-  top: 20%;
-  position: absolute;
-  bottom: 0;
-  width: 35%;
-  right: 0;
-  z-index: -4;
-}
-
-/*--------------------------------------------------------------------------------*/
-/* Skills CSS */
-.skill {
-  padding: 0 0 50px 0;
-  position: relative;
-}
-.skill-bx {
-  background: #120627;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-}
-.skill h2 {
-	font-size: 45px;
-	font-weight: 700;
-}
-.skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
-}
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
 }
 
 /*--------------------------------------------------------------------------------*/
