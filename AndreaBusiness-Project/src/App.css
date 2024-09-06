@@ -288,8 +288,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Error CSS */
 .error {
   background-color: #000;
-  padding: 80px 0;
-  position:absolute; 
+  padding: 20px 0;
+  position:fixed; 
   display: flex;
   width: 100%;
   justify-content: center;
