@@ -85,8 +85,13 @@ p.danger {
 }
 
 /*--------------------------------------------------------------------------------*/
+/* App CSS */
+
+
+/*--------------------------------------------------------------------------------*/
 /* Navbar CSS */
 nav.navbar {
+  background-color: #1d191b;
   padding: 18px 0;
   position: fixed;
   width: 100%;
@@ -269,12 +274,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*--------------------------------------------------------------------------------*/
 /* Error CSS */
 .error {
+  background-color: #000;
   padding: 80px 0;
-  display:flex;
+  position:absolute; 
+  display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   text-align: center;
+}
+.error h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: #fff;
+}
+.error h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: #fff;
+}
+.error img {
+  width: 50%;
 }
 
 /*--------------------------------------------------------------------------------*/
