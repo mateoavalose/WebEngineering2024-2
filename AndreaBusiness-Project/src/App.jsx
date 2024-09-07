@@ -6,6 +6,7 @@ import { RouteError } from './components/Menu/RouteError';
 // Components
 import Home from './components/HomePage/homePage';
 import { ModelShowcase } from './components/ModelsManagement/ModelShowcase';
+import { MakeupShowcase } from './components/Makeup/MakeupShowcase';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/models" element={<ModelShowcase />} />
+          <Route path="/makeup" element={<MakeupShowcase />} />
+
           <Route path="*" element={<RouteError />} />
         </Routes>
       </Router>
