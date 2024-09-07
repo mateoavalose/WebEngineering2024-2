@@ -7,8 +7,8 @@ export const ModelCard = ({ name,  portfolio, imgUrl, booking }) => {
         <img src={imgUrl} />
         <div className="model-txtx">
           <h4>{name}</h4>
-          <span>{portfolio}</span>
-          <span>{booking}</span>
+          <p>{portfolio}</p>
+          <p>{booking}</p>
         </div>
       </div>
     </Col>
