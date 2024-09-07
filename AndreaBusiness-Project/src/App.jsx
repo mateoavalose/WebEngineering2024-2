@@ -7,6 +7,7 @@ import { RouteError } from './components/Menu/RouteError';
 import Home from './components/HomePage/homePage';
 import { ModelShowcase } from './components/ModelsManagement/ModelShowcase';
 import { MakeupShowcase } from './components/Makeup/MakeupShowcase';
+import { MonthlyCalendar } from './components/FashionEvents/MonthlyCalendar';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/models" element={<ModelShowcase />} />
           <Route path="/makeup" element={<MakeupShowcase />} />
+          <Route path="/fashion" element={<MonthlyCalendar />} />
 
           <Route path="*" element={<RouteError />} />
         </Routes>
