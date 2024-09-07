@@ -336,7 +336,7 @@ nav.navbar.scrolled {
 /* Media query for smaller screens */
 @media (max-width: 900px) {
   .makeup-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 .makeup-imgbx {
@@ -402,6 +402,77 @@ nav.navbar.scrolled {
 .icon-green:before { background-color: #6aa84f; }
 .icon-yellow:before { background-color: #e69138; }
 .icon-red:before { background-color: #cc0000; }
+
+/*--------------------------------------------------------------------------------*/
+/* Photo Showcase */
+.photoShowcase {
+  background-image: linear-gradient(90.21deg, #690707be -5.91%, #084655 111.58%);
+  height: auto;
+  padding: 80px 0;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photoShowcase h1, h2 {
+  font-size: 45px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  width: 80vw;
+}
+.photoShowcase p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: auto;
+  text-align: center;
+  width: 56%;
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Photo CSS */
+.photo {
+  width: 90%;
+  padding: 80px 0;
+  position: relative;
+  margin: 0 auto;
+}
+.photo h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  .photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.photo-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.photo-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
 
 /*--------------------------------------------------------------------------------*/
 /* Error CSS */
