@@ -11,6 +11,7 @@ import { MonthlyCalendar } from './components/FashionEvents/MonthlyCalendar';
 import { PhotoShowcase } from './components/PhotoSales/PhotoShowcase';
 import { Membership } from './components/Memberships/Membership';
 import { SignUp } from './components/Memberships/SignUp';
+import { Contact } from './components/ContactForm/Contact';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/photo" element={<PhotoShowcase />} />
           <Route path="/memberships" element={<Membership />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/contact" element={<Contact />} />
 
           <Route path="*" element={<RouteError />} />
         </Routes>
