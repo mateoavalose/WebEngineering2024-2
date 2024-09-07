@@ -1,4 +1,3 @@
-import { Row } from "react-bootstrap";
 import { ModelCard } from "./ModelCard";
 
 export const Model = () => {
