@@ -44,6 +44,8 @@ export const NavBar = () => {
                             onClick={() => onUpdateActiveLink('fashion')}>Fashion</Nav.Link>
                         <Nav.Link as={Link} to="/photo" className={activeLink === 'photo' ? 'active navbar-link' : 'navbar-link'}
                             onClick={() => onUpdateActiveLink('photo')}>Photos</Nav.Link>
+                        <Nav.Link as={Link} to="/memberships" className={activeLink === 'memberships' ? 'active navbar-link' : 'navbar-link'}
+                            onClick={() => onUpdateActiveLink('memberships')}>Memberships</Nav.Link>
 
                         <Nav.Link as={Link} to="*" className={activeLink === 'error' ? 'active navbar-link' : 'navbar-link'} 
                             onClick={() => onUpdateActiveLink('error')}>404</Nav.Link>
