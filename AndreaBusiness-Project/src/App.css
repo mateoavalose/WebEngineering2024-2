@@ -475,7 +475,7 @@ nav.navbar.scrolled {
 }
 
 /*--------------------------------------------------------------------------------*/
-/* Membership CSS */
+/* Membership and Login CSS */
 .membership-container {
   color: #fff;
   padding: 0 5%;
@@ -556,6 +556,71 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/*--------------------------------------------------------------------------------*/
+/* SignUp CSS */
+.signup-container {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+.signup-container h1 {
+  color: #FF69B4;
+  margin-bottom: 30px;
+}
+
+.signup-form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.signup-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #FFD700;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: white;
+}
+
+.signup-form input::placeholder {
+  color: #999;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-form button:hover {
+  background-color: #ff85c1;
+}
+
 
 /*--------------------------------------------------------------------------------*/
 /* Error CSS */
