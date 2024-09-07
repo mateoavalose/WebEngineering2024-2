@@ -86,8 +86,11 @@ p.danger {
 
 /*--------------------------------------------------------------------------------*/
 /* App CSS */
+:root {
+  --navbar-height: 80px;
+}
 .App {
-  padding: 0;
+  padding: var(--navbar-height) 0 0 0;
   position: relative;
   max-width: 100%;
   max-height: 100%;
@@ -102,172 +105,122 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition:  0.32s ease-in-out;
+  transition: 0.32s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
 }
-nav.navbar.scrolled {
-  padding: 0px 0;
-  background-color: #121212;
+
+nav.navbar img {
+  width: 50px;
+  height: 50px;
 }
-nav.navbar a.navbar-brand {
-    width: 9%;
+
+nav.navbar .navbar-brand {
+  margin-left: 20px;
+  flex: 1 1 auto;
 }
-nav.navbar a.navbar-brand img {
-  width: 5%;
+
+nav.navbar .navbar-nav {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin: 0;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+
+nav.navbar .navbar-nav .nav-link {
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
   opacity: 0.75;
+  text-align: center;
 }
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-    opacity: 1;
+
+nav.navbar .navbar-nav .nav-link:hover,
+nav.navbar .navbar-nav .nav-link.active {
+  opacity: 1;
 }
-span.navbar-text {
-    display: flex;
-    align-items: center;
+
+/* Scrolled NavBar CSS */
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
 }
-nav.navbar .navbar-toggler:active,
-nav.navbar .navbar-toggler:focus {
-	outline: none;
-    box-shadow: none;
-}
-nav.navbar .navbar-toggler-icon {
-  width: 24px;
-  height: 17px;
-  background-image: none;
+
+/*--------------------------------------------------------------------------------*/
+/* Home Page */
+.home {
+  background-color: #121212;
   position: relative;
-  border-bottom: 2px solid #fff;
-  transition: all 300ms linear;
-  top: -2px;
-}
-nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #fff;
-}
-nav.navbar .navbar-toggler-icon:after,
-nav.navbar .navbar-toggler-icon:before {
-	width: 24px;
-	position: absolute;
-	height: 2px;
-	background-color: #fff;
-	top: 0;
-	left: 0;
-	content: '';
-	z-index: 2;
-	transition: all 300ms linear;
-}
-nav.navbar .navbar-toggler-icon:after {
-	top: 8px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
-	transform: rotate(45deg);
-	background-color: #fff;
-	height: 2px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
-	transform: translateY(8px) rotate(-45deg);
-	background-color: #fff;
-	height: 2px;
-}
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-	border-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
 }
 
 /*--------------------------------------------------------------------------------*/
 /* Welcome Message */
 .welcomeMSG {
-  background-color: #290202;
   padding: 80px 0;
+  display: flex;
+  flex-direction: column;
   position: relative;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100vw;
 }
-.welcomeMSG h1 {
+.welcomeMSG h1, h2 {
   font-size: 100px;
   font-weight: 700;
   color: #fff;
-}
-.welcomeMSG h2 {
-  font-size: 45px;
-  font-weight: 700;
-  color: #fff;
+  width: 80%;
 }
 .welcomeMSG h3 {
   padding: 20px 0;
   font-size: 30px;
   font-weight: 700;
   color: #fff;
+  width: 60%;
 }
 .welcomeMSG h4 {
   padding: 40px 0;
   font-size: 25px;
   font-weight: 700;
   color: #fff;
+  width: 60%;
 }
 
 /*--------------------------------------------------------------------------------*/
 /* Model Showcase */
 .modelShowcase {
-  background-color: #AA367C;
-  padding: 15% 0;
+  height: auto;
+  padding: 80px 0;
   position: relative;
-  max-width: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.modelShowcase h1 {
+.modelShowcase h1, h2 {
   font-size: 45px;
   font-weight: 700;
-  text-align: center;
-}
-.modelShowcase h2 {
-  font-size: 45px;
-  font-weight: 700;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
 }
 .modelShowcase p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: auto;
   text-align: center;
   width: 56%;
-}
-
-.modelShowcase .nav-item {
-  width: 50%;
-}
-
-.modelShowcase .nav-link {
-  background-color: transparent;
-  border-radius: 0;
-  padding: 17px 0;
-  color: #fff;
-  width: 100%;
-  font-size: 17px;
-  letter-spacing: 0.8px;
-  font-weight: 500;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  text-align: center;
-  z-index: 0;
-}
-.modelShowcase .nav-link::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.3s ease-in-out;
-}
-.modelShowcase .nav-link.active::before {
-    width: 100% !important;
 }
 
 /*--------------------------------------------------------------------------------*/
@@ -320,15 +273,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*--------------------------------------------------------------------------------*/
 /* Error CSS */
 .error {
-  background-color: #000;
-  padding: 15% 0;
-  position:fixed; 
+  background-image: linear-gradient(90.21deg, #070707 -5.91%, #2a2a2e 111.58%);
+  padding: 80px 0;
+  position: relative; 
   display: flex;
-  width: 100%;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   text-align: center;
-  top: 0;
 }
 .error h1 {
   font-size: 100px;
