@@ -259,7 +259,7 @@ nav.navbar.scrolled {
 }
 .model-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, #084655 -5.91%, #690707be 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
