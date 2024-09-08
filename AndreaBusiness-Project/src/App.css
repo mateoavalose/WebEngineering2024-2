@@ -155,7 +155,8 @@ nav.navbar.scrolled {
   background-color: #121212;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   text-align: center;
   width: 100vw;
@@ -710,6 +711,30 @@ h1 {
 
 .contact-form button:hover {
   background-color: #ff85c1;
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Game Overview */
+.brand-overview {
+  background-color: #3b3939;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 100px;
+}
+
+.brand-overview h2 {
+  color: #FF69B4;
+  margin-bottom: 20px;
+}
+
+.brand-overview p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 
