@@ -1,6 +1,7 @@
 import React from 'react';
 import WelcomeMsg from './welcomeMSG';
 import { FeaturedModel } from './featuredModel';
+import { FeaturedMakeup } from './featuredMakeup';
 import { BrandOverview } from './brandOverview';
 
 
@@ -9,6 +10,7 @@ const HomePage = () => {
         <div className="home">
             <WelcomeMsg />
             <FeaturedModel />
+            <FeaturedMakeup />
             <BrandOverview />
         </div>
     );
