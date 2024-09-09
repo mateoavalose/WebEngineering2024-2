@@ -7,7 +7,7 @@ export const RouteError = () => {
             <Row>
                 <h1>404: Not Found</h1>
             </Row>
-            <Row>
+            <Row className="error-message">
                 <h2>Sorry, the page you are looking for does not exist.</h2>
             </Row>
             <Row>
