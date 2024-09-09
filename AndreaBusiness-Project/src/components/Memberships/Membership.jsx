@@ -17,22 +17,27 @@ export const Membership = () => {
       <h1>Exclusive Memberships</h1>
       
       <Col className="tiers">
-        <h2>Membership Tiers</h2>
-        <Row className="tier-card">
-          <h3>Bronze Member</h3>
-          <p>Basic benefits with minimal access to exclusive content.</p>
-          <p>Not strictly legal benefits included.</p>
-        </Row>
-        <Row className="tier-card">
-          <h3>Silver Member</h3>
-          <p>Better perks, including discounts and more exclusive content.</p>
-          <p>More not strictly legal benefits included.</p>
-        </Row>
-        <Row className="tier-card">
-          <h3>Gold Member</h3>
-          <p>Top-tier benefits, access to all content, and premium perks.</p>
-          <p>Access to exclusive deals on not strictly legal activities.</p>
-        </Row>
+        <h2>Available Tiers</h2>
+        <Col className="tier-grid">
+          <Row className="tier-grid-card">
+            <h3>Bronze Member</h3>
+            <p>Basic benefits with minimal access to exclusive content.</p>
+            <p>Strictly legal benefits included.</p>
+            <p>50$ monthly</p>
+          </Row>
+          <Row className="tier-grid-card">
+            <h3>Silver Member</h3>
+            <p>Better perks, including discounts and more exclusive content.</p>
+            <p>Not strictly legal benefits included.</p>
+            <p>100$ monthly</p>
+          </Row>
+          <Row className="tier-grid-card">
+            <h3>Gold Member</h3>
+            <p>Top-tier benefits, access to all content, and premium perks.</p>
+            <p>Access to everything we have to offer.</p>
+            <p>500$ monthly</p>
+          </Row>
+        </Col>
       </Col>
 
       <div className="access">

@@ -566,38 +566,49 @@ nav.navbar.scrolled {
 /* Membership and Login CSS */
 .membership-container {
   color: #fff;
-  padding: 0 5%;
+  padding: 80px 5%;
   position: relative;
   width: 100vw;
   height: auto;
 }
-h1, h2 {
+.membership-container h1, h2 {
   text-align: center;
   color: #FF69B4;
   margin-bottom: 30px;
 }
 .tiers {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  justify-content: center;
   margin-bottom: 50px;
 }
-.tier-card {
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+.tier-grid-card {
   background-color: #2f2f2f;
   padding: 20px 20px;
-  width: 30%;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.tier-card h3 {
+.tier-grid-card h3 {
   color: #FFD700;
 }
-.tier-card p {
+.tier-grid-card p {
   font-size: 16px;
   color: #ddd;
 }
 .access {
-  text-align: center;
+  display: grid;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.access h2 {
+  color: #FF69B4;
+  margin-bottom: 30px;
+  align-self: center;
 }
 .login-signup {
   background-color: #333;
