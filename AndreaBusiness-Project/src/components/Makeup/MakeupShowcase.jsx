@@ -7,8 +7,10 @@ export const MakeupShowcase = () => {
             <Container>
                 <Row>
                     <Col size={12}>
-                        <h2>Makeup</h2>
-                        <p>Our beautiful models use this makeup to cover their ugliness. Maybe it works on you too!</p>
+                        <div className="makeupShowcase-text">
+                            <h2>Makeup Catalog</h2>
+                            <p>Our beautiful models use this makeup to cover their ugliness. Maybe it works on you too!</p>
+                        </div>
                         <Makeup/> 
                     </Col>
                 </Row>
