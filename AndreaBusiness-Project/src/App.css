@@ -227,6 +227,15 @@ nav.navbar.scrolled {
 
 /*--------------------------------------------------------------------------------*/
 /* Featured Models */
+.featured-models {
+  background-color: #4a5052;
+  border-radius: 100px;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
 
 /*--------------------------------------------------------------------------------*/
 /* Featured Makeup */
