@@ -688,10 +688,12 @@ a:hover {
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  justify-self: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
 }
 .signup-container h1 {
   color: #FF69B4;
@@ -740,8 +742,10 @@ a:hover {
   background-color: #1d1d1d;
   color: #fff;
   padding: 50px;
-  max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  width: 100vw;
+  height: auto;
 }
 h1 {
   text-align: center;
@@ -752,7 +756,6 @@ h1 {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .contact-details p {
   font-size: 18px;
 }
@@ -775,6 +778,7 @@ h1 {
   padding: 30px;
   border-radius: 10px;
   width: 60%;
+  max-width: 600px;
   margin: 0 auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
