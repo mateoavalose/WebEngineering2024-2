@@ -766,6 +766,52 @@ h1 {
 }
 
 /*--------------------------------------------------------------------------------*/
+/* Featured Events */
+.featured-events {
+  background-color: #4a5052;
+  border-radius: 100px;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.featured-events h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+.featured-events-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+/* Media query for smaller screens */
+@media (max-width: 900px) {
+  .featured-events-grid {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
+/* Event CSS */
+.event-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.event-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+/*--------------------------------------------------------------------------------*/
 /* Error CSS */
 .error {
   background-image: linear-gradient(90.21deg, #070707 -5.91%, #2a2a2e 111.58%);

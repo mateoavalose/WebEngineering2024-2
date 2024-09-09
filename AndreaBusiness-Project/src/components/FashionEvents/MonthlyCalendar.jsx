@@ -92,6 +92,8 @@ export const MonthlyCalendar = () => {
           start: "2024-09-02",
           end: "2024-09-05",
           backColor: "#d5663e",
+          imgUrl: "https://via.placeholder.com/150",
+          featured: true,
         },
         {
           id: 2,
@@ -99,6 +101,8 @@ export const MonthlyCalendar = () => {
           start: "2024-09-06",
           end: "2024-09-07",
           backColor: "#ecb823",
+          imgUrl: "https://via.placeholder.com/150",
+          featured: false,
         },
         {
           id: 3,
@@ -106,6 +110,8 @@ export const MonthlyCalendar = () => {
           start: "2024-09-16",
           end: "2024-09-17",
           backColor: "#6aa84f",
+          imgUrl: "https://via.placeholder.com/150",
+          featured: false,
         },
         {
           id: 4,
@@ -113,12 +119,16 @@ export const MonthlyCalendar = () => {
           start: "2024-09-20",
           end: "2024-09-22",
           backColor: "#3d85c6",
+          imgUrl: "https://via.placeholder.com/150",
+          featured: true,
         },
         {
           id: 5,
           text: "Event 5",
           start: "2024-09-25",
-          end: "2024-09-26"
+          end: "2024-09-26",
+          imgUrl: "https://via.placeholder.com/150",
+          featured: false,
         },
       ];
   
