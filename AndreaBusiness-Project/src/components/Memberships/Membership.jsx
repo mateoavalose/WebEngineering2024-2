@@ -44,7 +44,7 @@ export const Membership = () => {
         <h2>{isLoggedIn ? 'Exclusive Content' : 'Member Access'}</h2>
 
         {isLoggedIn ? (
-          <div>
+          <div className="loggedIn">
             <p>Welcome, esteemed member! Here are your exclusive benefits:</p>
             <ul>
               <li>Access to private content</li>

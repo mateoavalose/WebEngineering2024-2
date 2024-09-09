@@ -643,6 +643,39 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.loggedIn {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.loggedIn h2 {
+  color: #FF69B4;
+  margin-bottom: 30px;
+  align-self: center;
+}
+.loggedIn p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 20px;
+}
+.loggedIn ul {
+  list-style: circle;
+  padding-left: 20px;
+}
+.loggedIn li {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+.loggedIn button {
+  width: 100%;
+  padding: 10px;
+  background-color: #FF69B4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 /*--------------------------------------------------------------------------------*/
 /* SignUp CSS */
