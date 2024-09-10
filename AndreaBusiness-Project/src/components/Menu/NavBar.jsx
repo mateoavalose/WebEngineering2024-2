@@ -4,7 +4,7 @@ import logo from '../../assets/logo.svg';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 
 export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('homePage');
+    const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -27,27 +27,27 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Col className="logo">
-                    <Navbar.Brand as={Link} to="/">
+                    <Navbar.Brand as={Link} to="/" onClick={() => onUpdateActiveLink('home')}>
                         <img src={logo} alt="logo" />
                     </Navbar.Brand>
                 </Col>
                 <Col className="links">
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} 
-                            onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-                        <Nav.Link as={Link} to="/models" className={activeLink === 'models' ? 'active navbar-link' : 'navbar-link'}
-                            onClick={() => onUpdateActiveLink('models')}>Models</Nav.Link>
-                        <Nav.Link as={Link} to="/makeup" className={activeLink === 'makeup' ? 'active navbar-link' : 'navbar-link'}
-                            onClick={() => onUpdateActiveLink('makeup')}>Makeup</Nav.Link>
-                        <Nav.Link as={Link} to="/fashion" className={activeLink === 'fashion' ? 'active navbar-link' : 'navbar-link'}
-                            onClick={() => onUpdateActiveLink('fashion')}>Fashion Events</Nav.Link>
-                        <Nav.Link as={Link} to="/photo" className={activeLink === 'photo' ? 'active navbar-link' : 'navbar-link'}
-                            onClick={() => onUpdateActiveLink('photo')}>Photos</Nav.Link>
-                        <Nav.Link as={Link} to="/memberships" className={activeLink === 'memberships' ? 'active navbar-link' : 'navbar-link'}
-                            onClick={() => onUpdateActiveLink('memberships')}>Memberships</Nav.Link>
-                        <Nav.Link as={Link} to="/contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
-                            onClick={() => onUpdateActiveLink('contact')}>Contact Us</Nav.Link>
+                            <Nav.Link as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} 
+                                onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+                            <Nav.Link as={Link} to="/models" className={activeLink === 'models' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('models')}>Models</Nav.Link>
+                            <Nav.Link as={Link} to="/makeup" className={activeLink === 'makeup' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('makeup')}>Makeup</Nav.Link>
+                            <Nav.Link as={Link} to="/fashion" className={activeLink === 'fashion' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('fashion')}>Fashion Events</Nav.Link>
+                            <Nav.Link as={Link} to="/photo" className={activeLink === 'photo' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('photo')}>Photos</Nav.Link>
+                            <Nav.Link as={Link} to="/memberships" className={activeLink === 'memberships' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('memberships')}>Memberships</Nav.Link>
+                            <Nav.Link as={Link} to="/contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'}
+                                onClick={() => onUpdateActiveLink('contact')}>Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>                
                 </Col>
