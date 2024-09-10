@@ -2,10 +2,16 @@ import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/commo
 import { GptService } from './gpt.service';
 import { CreateGptDto } from './dto/create-gpt.dto';
 import { UpdateGptDto } from './dto/update-gpt.dto';
+import { TranslateGptDto } from './dto/translate-gpt.dto';
 
 @Controller('gpt')
 export class GptController {
   constructor(private readonly gptService: GptService) {}
+
+  @Post('translate')
+  async translate(@Body() gptDto:TranslateGptDto) {
+    return this.gptService.translate(gptDto);
+  }
 
   @Post()
   create(@Body() createGptDto: CreateGptDto) {
