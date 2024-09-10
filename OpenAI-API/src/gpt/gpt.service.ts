@@ -3,6 +3,7 @@ import { CreateGptDto } from './dto/create-gpt.dto';
 import { UpdateGptDto } from './dto/update-gpt.dto';
 import OpenAI from 'openai';
 import { translateUseCase } from './usecases/translate.use-case';
+import { prosConsDiscussionUseCase } from './usecases/discussion.use-case';
 
 @Injectable()
 export class GptService {
@@ -11,7 +12,11 @@ export class GptService {
   });
 
   async translate({prompt, lang}) {
-    return translateUseCase(this.openai, {prompt, lang});
+    return await translateUseCase(this.openai, {prompt, lang});
+  }
+
+  async prosConsDiscussion({prompt}) {
+    return await prosConsDiscussionUseCase(this.openai, {prompt});
   }
 
   create(createGptDto: CreateGptDto) {

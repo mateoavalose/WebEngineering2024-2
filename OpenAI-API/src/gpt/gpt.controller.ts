@@ -13,6 +13,11 @@ export class GptController {
     return this.gptService.translate(gptDto);
   }
 
+  @Post('pros-cons-discussion')
+  async prosConsDiscussion(@Body() gptDto:TranslateGptDto) {
+    return this.gptService.prosConsDiscussion(gptDto);
+  }
+
   @Post()
   create(@Body() createGptDto: CreateGptDto) {
     return this.gptService.create(createGptDto);
