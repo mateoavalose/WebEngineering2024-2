@@ -3,6 +3,7 @@ import { GptService } from './gpt.service';
 import { CreateGptDto } from './dto/create-gpt.dto';
 import { UpdateGptDto } from './dto/update-gpt.dto';
 import { TranslateGptDto } from './dto/translate-gpt.dto';
+import { GenerateImageGptDto } from './dto/image-gpt.dto';
 
 @Controller('gpt')
 export class GptController {
@@ -16,6 +17,11 @@ export class GptController {
   @Post('pros-cons-discussion')
   async prosConsDiscussion(@Body() gptDto:TranslateGptDto) {
     return this.gptService.prosConsDiscussion(gptDto);
+  }
+
+  @Post('generate-image')
+  async generateImage(@Body() gptDto:GenerateImageGptDto) {
+    return this.gptService.generateImage(gptDto);
   }
 
   @Post()

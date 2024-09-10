@@ -4,6 +4,7 @@ import { UpdateGptDto } from './dto/update-gpt.dto';
 import OpenAI from 'openai';
 import { translateUseCase } from './usecases/translate.use-case';
 import { prosConsDiscussionUseCase } from './usecases/discussion.use-case';
+import { generateImageUseCase } from './usecases/images.use-case';
 
 @Injectable()
 export class GptService {
@@ -17,6 +18,10 @@ export class GptService {
 
   async prosConsDiscussion({prompt}) {
     return await prosConsDiscussionUseCase(this.openai, {prompt});
+  }
+
+  async generateImage({prompt}) {
+    return await generateImageUseCase(this.openai, {prompt});
   }
 
   create(createGptDto: CreateGptDto) {
