@@ -1,0 +1,8 @@
+const contactPage = () => {
+    return (
+        <div>
+        <h1 className="text-2xl font-bold text-center">Contact</h1>
+        </div>
+    );
+};
+export default contactPage;
